@@ -1,0 +1,32 @@
+{
+  "name": "connect-rethinkdb",
+  "version": "0.0.1",
+  "description": "RethinkDB session store for Connect",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/guillaumervls/connect-rethinkdb.git"
+  },
+  "keywords": [
+    "connect",
+    "session",
+    "store",
+    "rethinkdb",
+    "rethink",
+    "db",
+    "express"
+  ],
+  "author": "guillaumervls",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.4.3",
+    "grunt-contrib-watch": "~0.4.0"
+  },
+  "dependencies": {
+    "debug": "~0.7.2",
+    "rethinkdb": "~1.4.0-3",
+    "deferred": "~0.6.3"
+  }
+}
