@@ -46,8 +46,12 @@ use(...);
 Unlike Redis, RethinkDB does not provide a ```SETEX``` function. So we have to flush expired sessions periodically. This defines the amount of time between two flushes.
 *Defaults to 60 seconds*
 
+###clientPromise
+A promise (see [https://github.com/medikoo/deferred](Deferred module)) that resolves with a RethinkDB connection.
+*Defaults ```undefined```. See ```clientOptions``` below if you can't provide this.*
+
 ###clientOptions
-We need these to connect to our DB.
+We need these to connect to our DB. Used only when no ```clientPromise``` is provided.
 *See [RethinkDB's doc](http://rethinkdb.com/api/#js:accessing_rql-connect).*
 
 ###table
