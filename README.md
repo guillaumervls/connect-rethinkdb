@@ -46,7 +46,7 @@ use(...);
 Unlike Redis, RethinkDB does not provide a ```SETEX``` function. So we have to flush expired sessions periodically. This defines the amount of time between two flushes.
 *Defaults to 60 seconds*
 
-###clientPromise
+###clientPromise - **REMOVED IN 0.4.0 !**
 A promise (see [Deferred module](https://github.com/medikoo/deferred)) that resolves with a RethinkDB connection.
 *Defaults to ```undefined```. See ```clientOptions``` below if you can't provide this.*
 
@@ -61,3 +61,8 @@ Name of the table in which session data will be stored.
 ###browserSessionsMaxAge
 If you do not set ```cookie.maxAge``` in ```session``` middleware, sessions will last until the user closes his/her browser. However we cannot keep the session data infinitely (for size and security reasons). In this case, this setting defines the maximum length of a session, even if the user doesn't close his/her browser.
 *Defaults to 1 day*
+
+## Changelog
+
+### 0.4.0
+Removed `clientPromise` option in constructor. Just use classic RethinkDB `clientOptions`. (It's because we now use under the hood [RQL-Promise](https://github.com/guillaumervls/rql-promise)).
