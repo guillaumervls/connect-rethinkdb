@@ -1,6 +1,6 @@
 {
   "name": "connect-rethinkdb",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "RethinkDB session store for Connect",
   "main": "index.js",
   "repository": {
