@@ -25,7 +25,7 @@ const app = express();
 const session = require('express-session');
 const RDBStore = require('session-rethinkdb')(session);
 
-const rDBStore = new RDBStore({
+const store = new RDBStore({
   flushOldSessIntvl: 60000,
   clientOptions: {
     db: 'test'
@@ -40,7 +40,7 @@ app.use(session({
   cookie: {
     maxAge: 10000
   },
-  store: rDBStore
+  store: store
 }));
 ```
 
