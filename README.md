@@ -16,7 +16,7 @@ session-rethinkdb
 
 ##Getting started
 
-You must already have Express Session or Connect installed (```npm install express```).
+You must already have Express Session or Connect installed (```npm install express express-session```).
 
 ```javascript
 const express = require('express');
