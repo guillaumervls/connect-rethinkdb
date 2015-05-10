@@ -47,7 +47,7 @@ app.use(session({
 ##Constructor options
 
 ###flushOldSessIntvl
-Unlike Redis, RethinkDB does not provide a ```SETEX``` function. So we have to flush expired sessions periodically. This defines the amount of time between two flushes.
+Flush expired sessions periodically. This defines the amount of time between two flushes.
 *Defaults to 60 seconds*
 
 ###clientOptions
