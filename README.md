@@ -12,7 +12,7 @@ session-rethinkdb
 
 ##Installation
 
-```npm install connect-rethinkdb```
+```npm install session-rethinkdb```
 
 ##Getting started
 
