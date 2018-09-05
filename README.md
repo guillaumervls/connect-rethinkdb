@@ -1,5 +1,6 @@
-Connect RethinkDB
-=================
+# :warning: UNMAINTAINED :warning:
+
+# Connect RethinkDB
 
 ### RethinkDB session store for Connect
 
